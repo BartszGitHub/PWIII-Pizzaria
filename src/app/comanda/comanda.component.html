@@ -9,7 +9,7 @@
 
         <h1>COMANDA</h1>
 
-        <form>
+        <form [formGroup]="formPizzaria" (ngSubmit)="OnProcessar()">
 
           <p>
             <label>Chopp</label>
@@ -37,7 +37,7 @@
           </p>
 
           <p class="comanda button">
-            <input type="submit" value="Registrar" />
+            <input type="submit" value="Registrar"/>
           </p>
 
         </form>
